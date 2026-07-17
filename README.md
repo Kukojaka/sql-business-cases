@@ -38,3 +38,18 @@ Each SQL solution includes:
 * Explanation
 * Expected output
 * Business interpretation
+
+## Case 1: Top 10 Products by Revenue
+
+Business question:
+Which products generate the highest revenue?
+
+Tables:
+- products
+- order_items
+
+Metric:
+revenue = price * quantity
+
+Solution:
+solutions/top_10_products.sql
