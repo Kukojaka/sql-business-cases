@@ -53,3 +53,22 @@ revenue = price * quantity
 
 Solution:
 solutions/top_10_products.sql
+
+## Case 2: Repeat Customers Analysis
+
+Business question:
+Which customers make repeat purchases?
+
+Tables:
+- orders
+
+Metric:
+total_orders = COUNT(order_id)
+
+Analysis:
+- first_order_date = MIN(order_date)
+- last_order_date = MAX(order_date)
+- repeat customers = customers with more than one order
+
+Solution:
+solutions/repeat_customers.sql
