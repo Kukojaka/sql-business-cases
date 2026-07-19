@@ -1,4 +1,5 @@
 from pathlib import Path
+from datetime import date
 
 import pandas as pd
 from faker import Faker
@@ -86,14 +87,14 @@ print("products.csv created")
 
 orders = []
 
-for order_id in range(1, 501):
+for order_id in range(1, 5001):
     orders.append({
         "order_id": order_id,
-        "customer_id": random.randint(1, 100),
+        "customer_id": random.randint(1, 800),
         "order_date": fake.date_between(
-            start_date="-1y",
-            end_date="today"
-        )
+        start_date=date(2025, 1, 1),
+        end_date=date(2025, 12, 31)
+    )
     })
 
 orders_df = pd.DataFrame(orders)
@@ -107,7 +108,7 @@ print("orders.csv created")
 
 order_items = []
 
-for order_id in range(1, 501):
+for order_id in range(1, 5001):
     items_count = random.randint(1, 5)
 
     for _ in range(items_count):
