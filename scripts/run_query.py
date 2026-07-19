@@ -4,7 +4,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 DB_PATH = BASE_DIR / "database" / "store.db"
-QUERY_PATH = BASE_DIR / "solutions" / "repeat_customers.sql"
+QUERY_PATH = BASE_DIR / "solutions" / "top_10_customers.sql"
 
 conn = sqlite3.connect(DB_PATH)
 
