@@ -67,93 +67,53 @@ Each SQL solution includes:
 
 # Completed Cases
 
-## Case 1: Top Products by Revenue
+## SQL Cases
 
-**Business question:**
-Which products generate the highest revenue?
+The repository contains SQL solutions for common e-commerce analytics tasks.
 
-**Tables:**
+1. **Top Products by Revenue**
 
-* products
-* order_items
+Business task:
+Find the top 10 products generating the highest revenue.
 
-**Metric:**
+Analysis:
+Calculate revenue using product price and quantity sold, then rank products by total revenue.
 
-```text
-revenue = price * quantity
-```
+Solution:
+`solutions/01_top_products_by_revenue.sql`
 
-**Analysis:**
 
-* calculate total quantity sold per product
-* multiply by product price
-* rank products by revenue
+2. **Repeat Customers Analysis**
 
-**Solution:**
+Business task:
+Identify customers who made more than one purchase.
 
-```text
-solutions/01_top_products_by_revenue.sql
-```
+Analysis:
+Count orders per customer and analyze customer purchasing behavior.
 
----
+Solution:
+`solutions/02_repeat_customers.sql`
 
-## Case 2: Repeat Customers Analysis
 
-**Business question:**
-Which customers make repeat purchases?
+3. **Top Customers by Revenue**
 
-**Tables:**
+Business task:
+Find the customers generating the highest revenue.
 
-* customers
-* orders
+Analysis:
+Calculate total customer revenue based on purchased products and rank customers by sales value.
 
-**Metrics:**
+Solution:
+`solutions/03_top_customers_by_revenue.sql`
 
-```text
-total_orders = COUNT(order_id)
-```
 
-**Analysis:**
+4. **Weekly Revenue Trend**
 
-* count orders per customer
-* identify customers with more than one purchase
-* calculate first and latest order dates
+Business task:
+Analyze how company revenue changes week by week.
 
-**Solution:**
+Analysis:
+Aggregate sales revenue by week to identify revenue dynamics over time.
 
-```text
-solutions/02_repeat_customers.sql
-```
-
----
-
-## Case 3: Top Customers by Revenue
-
-**Business question:**
-Which customers generate the highest revenue?
-
-**Tables:**
-
-* customers
-* orders
-* order_items
-* products
-
-**Metric:**
-
-```text
-revenue = price * quantity
-```
-
-**Analysis:**
-
-* connect customers with their orders
-* calculate revenue from purchased products
-* aggregate revenue per customer
-* rank customers by total revenue
-
-**Solution:**
-
-```text
-solutions/03_top_customers_by_revenue.sql
-```
+Solution:
+`solutions/04_weekly_revenue_trend.sql`
