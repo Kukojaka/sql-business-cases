@@ -117,3 +117,33 @@ Aggregate sales revenue by week to identify revenue dynamics over time.
 
 Solution:
 `solutions/04_weekly_revenue_trend.sql`
+
+5. **Monthly Average Order Value**
+
+Business task:
+
+Analyze how the average order value changes by month.
+
+Analysis:
+
+Calculate revenue for each order, aggregate it by month, and measure the average revenue generated per order.
+
+Solution:
+
+`solutions/05_monthly_average_order_value.sql`
+
+---
+
+6. **Monthly Revenue Growth**
+
+Business task:
+
+Analyze how revenue changes compared to the previous month.
+
+Analysis:
+
+Calculate monthly revenue and compare it with the previous month's revenue using the `LAG()` window function to measure month-over-month growth.
+
+Solution:
+
+`solutions/06_monthly_revenue_growth.sql`
