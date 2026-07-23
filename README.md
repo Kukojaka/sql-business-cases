@@ -147,3 +147,33 @@ Calculate monthly revenue and compare it with the previous month's revenue using
 Solution:
 
 `solutions/06_monthly_revenue_growth.sql`
+
+7. **Monthly Customer Ranking**
+
+Business task:
+
+Identify the top revenue-generating customer for each month.
+
+Analysis:
+
+Calculate monthly revenue for every customer and rank customers within each month using the `RANK()` window function.
+
+Solution:
+
+`solutions/07_monthly_customer_ranking.sql`
+
+---
+
+8. **Running Revenue**
+
+Business task:
+
+Analyze cumulative revenue growth throughout the year.
+
+Analysis:
+
+Calculate monthly revenue and use the `SUM() OVER()` window function to compute cumulative revenue from the beginning of the year.
+
+Solution:
+
+`solutions/08_running_revenue.sql`
